@@ -1,0 +1,11 @@
+def main():
+    lista = [3,2,4,5 ]
+    print(suma_lista(lista))
+
+def suma_lista(lista):
+    if len(lista) == 1:
+        return lista[0]
+    else:
+        actual = lista.pop()
+        return actual + suma_lista(lista)
+main()
